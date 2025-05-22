@@ -87,7 +87,11 @@ export const myProjects = [
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
-
+            {
+                id: 4,
+                name: 'RapidApi',
+                path: '/assets/rapidapi.png',
+            },
         ],
     },
     {
@@ -95,7 +99,7 @@ export const myProjects = [
         desc: 'CRWN Clothing is a modern and user-friendly e-commerce platform that allows users to browse and purchase clothing products.',
         subdesc:
             'With CRWN Clothing, uses React js, Tailwind CSS, TypeScript, and Stripe for secure payment processing.',
-        href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+        href: 'https://github.com/Alvin4646/crwn-Clothing',
         texture: '/textures/project/project2.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
@@ -124,10 +128,10 @@ export const myProjects = [
     },
     {
         title: 'Online Salon Booking and Management',
-        desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+        desc: 'A full-featured salon management platform with separate portals for customers and administrators, streamlining appointments, services, and payment tracking across multiple locations.',
         subdesc:
-            'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-        href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+            'Built using Angular, Spring Boot, and PostgreSQL, this solution allows admins to manage services, customers, and payments, while customers can book appointments from multiple salons with ease.',
+        href: 'https://github.com/Alvin4646/OnlineSalonService_BACKEND',
         texture: '/textures/project/project3.mp4',
         logo: '/assets/project-logo3.png',
         logoStyle: {
@@ -141,24 +145,19 @@ export const myProjects = [
         tags: [
             {
                 id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
+                name: 'Angular',
+                path: '/assets/angular.png',
             },
             {
                 id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
+                name: 'Springboot',
+                path: 'assets/springboot.png',
             },
             {
                 id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
+                name: 'PostgreSql',
+                path: '/assets/postgresql.png',
+            }
         ],
     },
     {
@@ -166,7 +165,7 @@ export const myProjects = [
         desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
         subdesc:
             'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+        href: 'https://github.com/Alvin4646/horizonBanking',
         texture: '/textures/project/project4.mp4',
         logo: '/assets/project-logo4.png',
         logoStyle: {
@@ -191,50 +190,8 @@ export const myProjects = [
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
         ],
-    },
-    {
-        title: 'Imaginify - AI Photo Manipulation App',
-        desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-        subdesc:
-            'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-        href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-        texture: '/textures/project/project5.mp4',
-        logo: '/assets/project-logo5.png',
-        logoStyle: {
-            backgroundColor: '#1C1A43',
-            border: '0.2px solid #252262',
-            boxShadow: '0px 0px 60px 0px #635BFF4D',
-        },
-        spotlight: '/assets/spotlight5.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
-        ],
-    },
+    }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
