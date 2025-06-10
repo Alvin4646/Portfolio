@@ -21,48 +21,45 @@ export const navLinks = [
     },
 ];
 
-export const clientReviews = [
-    {
-        id: 1,
-        name: 'Emily Johnson',
-        position: 'Marketing Director at GreenLeaf',
-        img: 'assets/review1.png',
-        review:
-            'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-    },
-    {
-        id: 2,
-        name: 'Mark Rogers',
-        position: 'Founder of TechGear Shop',
-        img: 'assets/review2.png',
-        review:
-            'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-    },
-    {
-        id: 3,
-        name: 'John Dohsas',
-        position: 'Project Manager at UrbanTech ',
-        img: 'assets/review3.png',
-        review:
-            'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-    },
-    {
-        id: 4,
-        name: 'Ether Smith',
-        position: 'CEO of BrightStar Enterprises',
-        img: 'assets/review4.png',
-        review:
-            'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-    },
-];
-
 export const myProjects = [
+    {
+        title: 'Horizon - Online Banking Platform',
+        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+        subdesc:
+            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+        href: 'https://github.com/Alvin4646/horizonBanking',
+        texture: '/textures/project/project4.mp4',
+        logo: '/assets/project-logo4.png',
+        logoStyle: {
+            backgroundColor: '#0E1F38',
+            border: '0.2px solid #0E2D58',
+            boxShadow: '0px 0px 60px 0px #2F67B64D',
+        },
+        spotlight: '/assets/spotlight4.png',
+        tags: [
+            {
+                id: 1,
+                name: 'React.js',
+                path: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'TailwindCSS',
+                path: 'assets/tailwindcss.png',
+            },
+            {
+                id: 3,
+                name: 'TypeScript',
+                path: '/assets/typescript.png',
+            },
+        ],
+    },
     {
         title: 'Lyriks - Music Streaming Platform',
         desc: 'Lyriks is a Music streaming and playing platform that uses the rapid api shazam core api to fetch music data and display it in a user-friendly interface.',
         subdesc:
-            'Built with React js, Tailwind CSS, TypeScript, RapidAPI Lyriks is designed for optimal performance and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+            "Built with React js, Tailwind CSS, TypeScript, RapidAPI Lyriks is designed for optimal performance and scalability. It uses Shazam Core API's prebuild REST apis for fetching and streaming music",
+        href: 'https://github.com/Alvin4646/lyriksMusic',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
@@ -159,38 +156,6 @@ export const myProjects = [
                 path: '/assets/postgresql.png',
             }
         ],
-    },
-    {
-        title: 'Horizon - Online Banking Platform',
-        desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-        subdesc:
-            'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-        href: 'https://github.com/Alvin4646/horizonBanking',
-        texture: '/textures/project/project4.mp4',
-        logo: '/assets/project-logo4.png',
-        logoStyle: {
-            backgroundColor: '#0E1F38',
-            border: '0.2px solid #0E2D58',
-            boxShadow: '0px 0px 60px 0px #2F67B64D',
-        },
-        spotlight: '/assets/spotlight4.png',
-        tags: [
-            {
-                id: 1,
-                name: 'React.js',
-                path: '/assets/react.svg',
-            },
-            {
-                id: 2,
-                name: 'TailwindCSS',
-                path: 'assets/tailwindcss.png',
-            },
-            {
-                id: 3,
-                name: 'TypeScript',
-                path: '/assets/typescript.png',
-            },
-        ],
     }
 ];
 
@@ -211,7 +176,11 @@ export const workExperiences = [
         name: 'Capgemini',
         pos: 'Frontend Developer',
         duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+        title:`Developed interactive and responsive UI components using React and TypeScript
+Built and managed forms with state handling via Redux Toolkit (RTK). Utilized RTK Query for efficient data fetching and state management
+Implemented unit tests using Jest, ensuring 80%+ test coverage. Developed Micro Frontends, integrating Webpack and Vite for modular architecture.
+Worked with both CSS and styled-components for flexible styling solutions.
+Debugged and resolved UI/UX issues to enhance application stability and performance.`,
         icon: '/assets/CG.png',
         animation: 'victory',
     },
@@ -220,7 +189,8 @@ export const workExperiences = [
         name: 'Kiyan CH Solutions',
         pos: 'Intern',
         duration: '2021 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
+        title: `Assisted in developing frontend components for client web application using Angular and Bootstrap CSS
+Gained experience in real-world software development workflows and team communication in a remote setting`,
         icon: '/assets/Kiyan.jpeg',
         animation: 'clapping',
     }

@@ -6,6 +6,7 @@ import { OrbitControls } from '@react-three/drei';
 import { workExperiences } from '../constants/index.js';
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import Developer from "../components/Developer.jsx";
+import BentoTilt from "../components/BentoTilt.jsx";
 
 const WorkExperience = () => {
     const [animationName, setAnimationName] = useState('idle');
@@ -16,7 +17,7 @@ const WorkExperience = () => {
                 <p className="head-text">My Work Experience</p>
 
                 <div className="work-container">
-                    <div className="work-canvas">
+                    <BentoTilt className="work-canvas">
                         <Canvas>
                             <ambientLight intensity={7} />
                             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -27,7 +28,7 @@ const WorkExperience = () => {
                                 <Developer position-y={-3} scale={3} animationName={animationName} />
                             </Suspense>
                         </Canvas>
-                    </div>
+                    </BentoTilt>
 
                     <div className="work-content">
                         <div className="sm:py-10 py-5 sm:px-5 px-2.5">
@@ -51,8 +52,11 @@ const WorkExperience = () => {
                                         <p className="text-sm mb-5">
                                             {item.pos} -- <span>{item.duration}</span>
                                         </p>
-                                        <p className="group-hover:text-white transition-all ease-in-out duration-500">{item.title}</p>
-                                    </div>
+                                        <ul className="list-disc pl-5 space-y-2 group-hover:text-white transition-all ease-in-out duration-500">
+                                            {item.title.split('\n').map((line, index) => (
+                                                <li key={index}>{line.trim()}</li>
+                                            ))}
+                                        </ul></div>
                                 </div>
                             ))}
                         </div>
